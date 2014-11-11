@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+    <br/><br/>
+<div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+
+    <form method="post" action="/verificar/" class="form-signin well" role="form">
+        <h2 class="form-signin-heading ">LOGIN</h2>
+          <label class="alert-danger" >{{ error }}</label>
+          <hr>
+        <input type="text" name="username" class="form-control" placeholder="USUARIO" required autofocus>
+          <hr>
+        <input type="password" name="passwd" class="form-control" placeholder="CONTRASEÑA" required>
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">INGRESAR</button>
+      </form>
+    </div>
+<div class="col-md-4"></div>
+</div>
+
+{% endblock %}
+
+
+
+<form action="/direccion/" method="post" role="form">
+    <button type="submit" class="btn btn-primary">DIRECCION</button>
+    </form>
+

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+    <hr/>
+        <div>
+            usuario
+            {{ nombre }}
+
+        </div>
+    <a class="btn btn-primary" href="/cerrarSesion/" >CERRAR SESION</a>
+    <hr/>
+
+
+    <div class="row">
+    {% for i in puertas %}
+
+        <div class="col-md-4" align="center">
+
+            <a href="/{{ i.nombre }}/"><img class="img-responsive" src="/static/img/{{ i.nombre }}.png" alt="{{ i.nombre }}"/></a>
+
+        </div>
+
+    {% endfor %}
+
+    </div>
+
+{% endblock %}
