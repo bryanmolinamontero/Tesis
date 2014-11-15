@@ -11,14 +11,18 @@
 
     </div>
     <hr/>
+
+    <form method="POST" action="/editarUsuario/" class="well"  role="form" >
+
     <div class="row">
 
         <div class="col-md-2"></div>
         <div class="col-md-8">
-
             <div class="row">
                 <div class="col-md-6">
+
                     <div class="form-group">
+                         <input type="hidden" name="id" value="{{ id.id_personal}}">
                         <label for="idNombre">Nombre</label>
                         <input type="text" name="nombre" class="form-control" id="idNombre" value="{{ id.nombre }}" required>
                     </div>
@@ -35,7 +39,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idUsername">Username</label>
-                        <input type="text" name="username3" class="form-control" id="idUsername" value="{{ id.username }}" required>
+                        <input type="text" name="username3" class="form-control" id="idUsername" value="{{ id.username }}" readonly="readonly" required>
                     </div>
                 </div>
 
@@ -111,6 +115,8 @@
 
 
         </div>
+
+
         <div class="col-md-2"></div>
 
 
@@ -123,12 +129,16 @@
             <button type="submit" class="btn btn-primary">Guardar Cambios</button>
         </div>
         <div class="col-md-3 col-xs-6">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar sin guardar</button>
+
+            <button type="button" onclick="window.location.href='/administrador/'" class="btn btn-danger" data-dismiss="modal">Cerrar sin guardar</button>
         </div>
 
         <div class="col-md-3"></div>
 
     </div>
+
+    </form>
+
     <hr/>
 
     <script>

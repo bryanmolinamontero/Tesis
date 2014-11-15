@@ -7,9 +7,30 @@ from models import *
 
 
 def usuario(request):
-    persona = personal.objects.get(username = request.session['sesionUsuario'])
-    puertas = cerraduras.objects.filter(id_personal = persona.id_personal)
-    return render_to_response('usuarios.html', {"nombre":persona , "puertas":puertas})
+
+        try:
+            print "1"
+            if request.session['sesionUsuario'] is not None :
+                print "2"
+                persona = personal.objects.get(username = request.session['sesionUsuario'])
+                print "3"
+                puertas = cerraduras.objects.filter(id_personal = persona.id_personal)
+                print "4"
+                return render_to_response('usuarios.html', {"nombre":persona , "puertas":puertas})
+
+            print "5"
+
+        except:
+            print "6"
+            return HttpResponseRedirect('/')
+
+        print "7"
+
+
+
+
+
+
 
 
 def administrador(request):
@@ -215,3 +236,101 @@ def usuarioEspecifico(request):
         especifico = personal.objects.get(id_personal  = id)
         puertasEspecifico = cerraduras.objects.filter(id_personal = especifico)
         return render_to_response('usuarioEspecifico.html',{"id":especifico,"puertas":puertasEspecifico})
+
+
+def editarUsuario(request):
+    if request.POST:
+
+        id=request.POST['id']
+        nombre=request.POST['nombre']
+        apellido=request.POST['apellido']
+        usuario=request.POST['username3']
+        password=request.POST['passwd3']
+        guardarRegistro =personal(id_personal = id, nombre=nombre, apellido=apellido,username=usuario, clave= password, tipo='Usuario')
+        guardarRegistro.save()
+        registros = cerraduras.objects.filter(id_personal=id)
+        registros.delete()
+
+        lista = []
+        try:
+            l1 = request.POST['lab1']
+            lista.append(l1)
+        except:
+            False
+
+        try:
+            l2 = request.POST['lab2']
+            lista.append(l2)
+        except:
+            False
+
+        try:
+            l3 = request.POST['lab3']
+            lista.append(l3)
+        except:
+            False
+
+        try:
+            l4 = request.POST['lab4']
+            lista.append(l4)
+        except:
+            False
+
+        try:
+            l5 = request.POST['lab5']
+            lista.append(l5)
+        except:
+            False
+
+        try:
+            l6 = request.POST['lab6']
+            lista.append(l6)
+        except:
+            False
+
+        try:
+            telecomunicaciones = request.POST['telecomunicaciones']
+            lista.append(telecomunicaciones)
+        except:
+            False
+
+        try:
+            mac = request.POST['mac']
+            lista.append(mac)
+        except:
+            False
+
+        try:
+            direccion = request.POST['direccion']
+            lista.append(direccion)
+        except:
+            False
+
+        try:
+            electronica = request.POST['electronica']
+            lista.append(electronica)
+        except:
+            False
+
+        try:
+            ciditec = request.POST['ciditec']
+            lista.append(ciditec)
+        except:
+            False
+
+        try:
+            administradorTecnico = request.POST['administradorTecnico']
+            lista.append(administradorTecnico)
+        except:
+            False
+
+        obtenerId = personal.objects.get(nombre=nombre,apellido=apellido,username=usuario, clave= password, tipo='Usuario')
+        for i in lista:
+            print i
+            guardarPuerta = cerraduras(nombre=i, id_personal= obtenerId)
+            guardarPuerta.save()
+
+        return HttpResponseRedirect('/administrador/')
+
+    else:
+        return render_to_response('/')
