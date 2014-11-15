@@ -14,6 +14,15 @@ def usuario(request):
 
 def administrador(request):
     usuarios = personal.objects.filter(tipo='Usuario')
+
+    for i in usuarios:
+        #puertasDeCadaUsuario = cerraduras.objects.filter(id_personal =i.id_personal)
+        print "**********"
+        #print puertasDeCadaUsuario
+        print "**********"
+
+
+
     return render_to_response('administrador.html', {"usuarios":usuarios})
 
 
@@ -68,7 +77,6 @@ def verificarLogin(request):
                 except  personal.DoesNotExist: #credenciales incorrectas
                     return render_to_response('login.html' , {"error": "Usuario no encontrado"})#, {"variable": username+" "+ passwd + "NO HAY NADA"})
     else:
-        print "zzzzzzzzz"
         return render_to_response('login.html')
 
     #return render_to_response('login.html')
@@ -140,8 +148,8 @@ def ingresarUsuario(request):
             False
 
         try:
-            l7 = request.POST['lab7']
-            lista.append(l7)
+            telecomunicaciones = request.POST['telecomunicaciones']
+            lista.append(telecomunicaciones)
         except:
             False
 
@@ -170,8 +178,8 @@ def ingresarUsuario(request):
             False
 
         try:
-            docencia = request.POST['docencia']
-            lista.append(docencia)
+            administradorTecnico = request.POST['administradorTecnico']
+            lista.append(administradorTecnico)
         except:
             False
 
@@ -187,8 +195,8 @@ def ingresarUsuario(request):
             #guardarPuerta =personal(nombre=i, po='Usuario')
         #guardarRegistro.save()
 
-        #lab1 = 22, lab2 = 23, lab3 = 24, lab4 = 25, lab5 = 26, lab6 = 27, lab7 = 28
-        #mac = 29, direccion = 30, electronica = 31, docencia = 32
+        #lab1 = 22, lab2 = 23, lab3 = 24, lab4 = 25, lab5 = 26, lab6 = 27, telecomunicaciones = 28
+        #mac = 29, direccion = 30, electronica = 31, administradorTecnico = 32
 
 
 
@@ -197,3 +205,11 @@ def ingresarUsuario(request):
 
     else:
         return render_to_response('/')
+
+
+
+def usuarioEspecifico(request):
+
+    if request.POST:
+        id=request.POST['idUsuario']
+        return render_to_response('usuarioEspecifico.html',{"id":id})

@@ -3,7 +3,7 @@
   <component name="DataSourceManagerImpl" format="xml" hash="2690736440">
     <data-source source="LOCAL" name="Django default" uuid="23668ef5-b5e9-4944-a32d-92793686cebc">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Bryan Molina\PycharmProjects\tesis\tesisBD2</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Universidad\TESIS bryan molina\Programacion\tesis\tesisBD2</jdbc-url>
       <libraries />
     </data-source>
   </component>

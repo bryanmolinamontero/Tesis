@@ -62,19 +62,23 @@
 
                       <br/>
                       <div class="row">
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab7.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/telecomunicaciones.png" alt="lab1"/></div>
 
                           <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/mac.png" alt="lab1"/></div>
 
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/direccion.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/electronica.png" alt="lab1"/></div>
+
+
 
                       </div>
 
                       <br/>
                       <div class="row">
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/electronica.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/direccion.png" alt="lab1"/></div>
 
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/docencia.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/ciditec.png" alt="lab1"/></div>
+
+                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/administradorTecnico.png" alt="lab1"/></div>
 
 
 
@@ -115,19 +119,19 @@
                                     {% for i in usuarios %}
 
                                         <tr>
-                                        <td id="cod_{{ i.id_personal }}">{{i.id_personal}}</td>
-                                        <td id="nombre_{{i.id_personal}}">{{i.nombre}}</td>
-                                        <td id="apellido_{{i.id_personal}}">{{i.apellido}}</td>
-                                        <td id="username_{{i.id_personal}}">{{i.username}}</td>
-                                        <td id="passwd_{{i.id_personal}}">{{i.clave}}</td>
+                                        <td id="{{ i.id_personal }}">{{i.id_personal}}</td>
+                                        <td id="{{i.id_personal}}">{{i.nombre}}</td>
+                                        <td id="{{i.id_personal}}">{{i.apellido}}</td>
+                                        <td id="{{i.id_personal}}">{{i.username}}</td>
+                                        <td id="{{i.id_personal}}">{{i.clave}}</td>
 
                                     {% comment %} <td><button class="btn btn-success" id="Guardar" onclick="editarRegistro({{ i.codigo_terrateniente }})">Editar</button></td>{% endcomment %}
                                         <td>
-                                        <button  id ="Editar" onclick="editarRegistro({{i.id_personal}})" class="btn btn-success" data-toggle="modal" data-target="#myModalEditar">
+                                        <button  id ="Editar" onclick="editarRegistro({{ i.id_personal }})" class="btn btn-success" data-toggle="modal" data-target="#myModalEditar">
                                         Editar
                                         </button>
 
-                                        <button  id ="Eliminar" onclick="eliminarRegistro({{i.id_personal}})" class="btn btn-danger" data-toggle="modal" data-target="#myModalEliminar">
+                                        <button  id ="Eliminar" onclick="eliminarRegistro()" class="btn btn-danger" data-toggle="modal" data-target="#myModalEliminar">
                                         Eliminar
                                         </button>
 
@@ -143,6 +147,12 @@
                                 </tbody>
                             </table>
                         </div>
+
+
+                  {% for i in lista %}
+
+                    {{ i }}
+                  {% endfor %}
 
 
 
@@ -246,7 +256,7 @@
     </div>
 
     <div class="col-md-3">
-    <label><input type="checkbox" name="lab7" value="lab7">&nbsp;Lab.7</label>
+    <label><input type="checkbox" name="telecomunicaciones" value="telecomunicaciones">&nbsp;Telecom...</label>
     </div>
 
     <div class="col-md-3">
@@ -270,7 +280,7 @@
     </div>
 
     <div class="col-md-3">
-    <label><input type="checkbox" name="docencia" value="docencia">&nbsp;Docencia</label>
+    <label><input type="checkbox" name="administradorTecnico" value="administradorTecnico">&nbsp;Adm Técnico</label>
     </div>
 
 </div>
@@ -294,6 +304,36 @@
 $(document).ready( function () {
     $('#table_id').DataTable();
 } );
+
+function editarRegistro(idUsuario){
+
+
+    // Creamos el formulario auxiliar
+var form = document.createElement( "form" );
+
+// Le añadimos atributos como el name, action y el method
+form.setAttribute( "name", "formulario" );
+form.setAttribute( "action", "/usuarioEspecifico/" );
+form.setAttribute( "method", "post" );
+
+// Creamos un input para enviar el valor
+var input = document.createElement( "input" );
+
+// Le añadimos atributos como el name, type y el value
+input.setAttribute( "name", "idUsuario" );
+input.setAttribute( "type", "hidden" );
+input.setAttribute( "value", idUsuario );
+
+// Añadimos el input al formulario
+form.appendChild( input );
+
+// Añadimos el formulario al documento
+document.getElementsByTagName( "body" )[0].appendChild( form );
+
+// Hacemos submit
+document.formulario.submit();
+
+}
 </script>
 
 

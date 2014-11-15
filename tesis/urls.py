@@ -30,6 +30,7 @@ urlpatterns = patterns('',
 
     url(r'^administrador/$', administrador),
     url(r'^usuario/$', usuario),
+    url(r'^usuarioEspecifico/$', usuarioEspecifico),
 
     #usuarios
 

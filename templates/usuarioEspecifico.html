@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block contenido%}
+    <br/>
+    <div class="row">
+
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="idNombre">Nombre</label>
+                        <input type="text" name="nombre" class="form-control" id="idNombre"  required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="idApellido" >Apellido</label>
+                        <input type="text"  name="apellido" class="form-control" id="idApellido"  required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="idUsername">Username</label>
+                        <input type="text" name="username" class="form-control" id="idUsername"  required>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="idPassword">Password</label>
+                        <input type="password"  name="passwd" class="form-control" id="idPassword"  required>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-md-2"></div>
+
+
+
+    </div>
+    <p>el id es: {{ id }}</p>
+
+
+{% endblock %}
