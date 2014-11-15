@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
 
 {% block contenido%}
-    <br/>
+
+    <hr/>
+    <div class="row">
+
+
+        <h1 style="text-align: center">Edición de Usuario</h1>
+
+
+    </div>
+    <hr/>
     <div class="row">
 
         <div class="col-md-2"></div>
@@ -11,13 +20,13 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idNombre">Nombre</label>
-                        <input type="text" name="nombre" class="form-control" id="idNombre"  required>
+                        <input type="text" name="nombre" class="form-control" id="idNombre" value="{{ id.nombre }}" required>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idApellido" >Apellido</label>
-                        <input type="text"  name="apellido" class="form-control" id="idApellido"  required>
+                        <input type="text"  name="apellido" class="form-control" id="idApellido" value="{{ id.apellido }}"  required>
                     </div>
                 </div>
             </div>
@@ -26,16 +35,77 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idUsername">Username</label>
-                        <input type="text" name="username" class="form-control" id="idUsername"  required>
+                        <input type="text" name="username3" class="form-control" id="idUsername" value="{{ id.username }}" required>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idPassword">Password</label>
-                        <input type="password"  name="passwd" class="form-control" id="idPassword"  required>
+                        <input type="password3"  name="passwd3" class="form-control" id="idPassword"  value="{{ id.clave }}" required>
                     </div>
                 </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "lab1" name="lab1" value="lab1">&nbsp;Lab.1</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "lab2" name="lab2" value="lab2">&nbsp;Lab.2</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "lab3" name="lab3" value="lab3">&nbsp;Lab.3</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "lab4" name="lab4" value="lab4">&nbsp;Lab.4</label>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "lab5" name="lab5" value="lab5">&nbsp;Lab.5</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "lab6" name="lab6" value="lab6">&nbsp;Lab.6</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox"  id = "telecomunicaciones" name="telecomunicaciones" value="telecomunicaciones">&nbsp;Telecom...</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id="mac" name="mac" value="mac">&nbsp;MAC</label>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id="direccion" name="direccion" value="direccion">&nbsp;Dirección</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "electronica" name="electronica" value="electronica">&nbsp;Electrónica</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "ciditec" name="ciditec" value="ciditec">&nbsp;CIDITEC</label>
+                </div>
+
+                <div class="col-md-3">
+                <label><input type="checkbox" id = "administradorTecnico" name="administradorTecnico" value="administradorTecnico">&nbsp;Adm Técnico</label>
+                </div>
+
             </div>
 
 
@@ -46,7 +116,45 @@
 
 
     </div>
-    <p>el id es: {{ id }}</p>
+    <br/>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 col-xs-6" >
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar sin guardar</button>
+        </div>
+
+        <div class="col-md-3"></div>
+
+    </div>
+    <hr/>
+
+    <script>
+   $(document).ready( function () {
+
+       var listaTotal = ["lab1","lab2","lab3","lab4","lab5","lab6","telecomunicaciones","mac","direccion","electronica","ciditec","administradorTecnico"];
+       var listaQueLlega=[];
+
+       {% for i in puertas %}
+           listaQueLlega.push("{{ i.nombre }}");
+       {% endfor %}
+
+        for(var i =0; i<listaQueLlega.length;i++){
+            var index = listaTotal.indexOf(listaQueLlega[i]);
+            console.log("vuela "+ i);
+            if(index!=-1){
+               console.log(listaQueLlega[i]);
+                document.getElementById(String(listaQueLlega[i])).checked = true;
+            }
+
+        }
+
+
+
+    } );
+    </script>
 
 
 {% endblock %}

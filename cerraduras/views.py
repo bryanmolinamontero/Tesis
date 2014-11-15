@@ -106,8 +106,8 @@ def ingresarUsuario(request):
     if request.POST:
         nombre=request.POST['nombre']
         apellido=request.POST['apellido']
-        usuario=request.POST['username']
-        password=request.POST['passwd']
+        usuario=request.POST['username2']
+        password=request.POST['passwd2']
         guardarRegistro =personal(nombre=nombre, apellido=apellido,username=usuario, clave= password, tipo='Usuario')
         guardarRegistro.save()
         lista = []
@@ -212,4 +212,6 @@ def usuarioEspecifico(request):
 
     if request.POST:
         id=request.POST['idUsuario']
-        return render_to_response('usuarioEspecifico.html',{"id":id})
+        especifico = personal.objects.get(id_personal  = id)
+        puertasEspecifico = cerraduras.objects.filter(id_personal = especifico)
+        return render_to_response('usuarioEspecifico.html',{"id":especifico,"puertas":puertasEspecifico})
