@@ -97,8 +97,7 @@
                   <div role="tabpanel" class="tab-pane fade" id="usuarios">
 
                       <br/>
-
-                        <button type="button" onclick="window.location.href='/nuevoUsuario/'" class="btn btn-primary" data-dismiss="modal">Ingresar Nuevo Usuario</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModalIngresar">Ingresar Nuevo Usuario </button>
                       <br/> <br/>
 
 
@@ -183,45 +182,131 @@
 
 
 
+    <div class="modal fade" id="myModalIngresar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Nuevo Usuario</h4>
+      </div>
+      <div class="modal-body">
+
+<form method="POST" action="/ingresarUsuario/" class="well"  role="form" >
+
+<div class="row">
+    <div class="col-md-6">
+            <div class="form-group">
+                <label for="idNombre">Nombre</label>
+                <input type="text" name="nombre" class="form-control" id="idNombre"  required>
+            </div>
+    </div>
+    <div class="col-md-6">
+            <div class="form-group">
+                <label for="idApellido" >Apellido</label>
+                <input type="text"  name="apellido" class="form-control" id="idApellido"  required>
+            </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+    <p style="color: red"> Escoja bien nombre de usuario, no podrá ser cambiado.</p>
+        </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="idUsername">Username</label>
+            <input type="text" name="username2" class="form-control" id="idUsername"  required>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="idPassword">Password</label>
+            <input type="password"  name="passwd2" class="form-control" id="idPassword"  required>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="lab1" value="lab1">&nbsp;Lab.1</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="lab2" value="lab2">&nbsp;Lab.2</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="lab3" value="lab3">&nbsp;Lab.3</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="lab4" value="lab4">&nbsp;Lab.4</label>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="lab5" value="lab5">&nbsp;Lab.5</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="lab6" value="lab6">&nbsp;Lab.6</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="telecomunicaciones" value="telecomunicaciones">&nbsp;Telecom...</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="mac" value="mac">&nbsp;MAC</label>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="direccion" value="direccion">&nbsp;Dirección</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="electronica" value="electronica">&nbsp;Electrónica</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="ciditec" value="ciditec">&nbsp;CIDITEC</label>
+    </div>
+
+    <div class="col-md-3">
+    <label><input type="checkbox" name="administradorTecnico" value="administradorTecnico">&nbsp;Adm Técnico</label>
+    </div>
+
+</div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar sin guardar</button>
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+          </div>
+          </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 
 <script>
 $(document).ready( function () {
-   /* $('#table_id').DataTable(
-            {
-            "language": {
-                "url": "dataTables.spanish.lang"
-            }
-        }
-    );*/
-    $(document).ready(function() {
-        $('#table_id').dataTable( {
-            "language": {
-                "sProcessing":     "Procesando...",
-                "sLengthMenu":     "Mostrar _MENU_ registros",
-                "sZeroRecords":    "No se encontraron resultados",
-                "sEmptyTable":     "Ningún dato disponible en esta tabla",
-                "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix":    "",
-                "sSearch":         "Buscar:",
-                "sUrl":            "",
-                "sInfoThousands":  ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst":    "Primero",
-                    "sLast":     "Último",
-                    "sNext":     "Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "oAria": {
-                    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                }
-            }
-        } );
-    } );
+    $('#table_id').DataTable();
 } );
 
 function editarRegistro(idUsuario){

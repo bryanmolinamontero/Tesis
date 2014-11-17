@@ -122,6 +122,9 @@ def cerrarSesion(request):
 def direccion(request):
   return render_to_response('direccion.html')
 
+def nuevoUsuario(request):
+    return render_to_response('nuevoUsuario.html')
+
 
 def ingresarUsuario(request):
     if request.POST:

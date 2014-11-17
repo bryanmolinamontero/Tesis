@@ -1,15 +1,17 @@
-{% extends 'base.html' %}
+{%extends 'base.html' %}
+
+
 
 {% block contenido%}
 
     <hr style="margin: 10px">
     <div class="row">
-        <h1 class="visible-md visible-lg" style="text-align: center">Edición de Usuario</h1>
-        <div class="visible-xs "><h3 style="text-align: center">Edición de Usuario</h3></div>
+        <h1 class="visible-md visible-lg" style="text-align: center">Ingreso de Usuario</h1>
+        <div class="visible-xs "><h3 style="text-align: center">Ingreso de Usuario</h3></div>
     </div>
     <hr style="margin: 10px">
 
-    <form method="POST" action="/editarUsuario/" class="well"  role="form" >
+    <form method="POST" action="/ingresarUsuario/" class="well"  role="form" >
 
     <div class="row">
 
@@ -19,15 +21,14 @@
                 <div class="col-md-6">
 
                     <div class="form-group">
-                         <input type="hidden" name="id" value="{{ id.id_personal}}">
                         <label for="idNombre">Nombre</label>
-                        <input type="text" name="nombre" class="form-control" id="idNombre" value="{{ id.nombre }}" required>
+                        <input type="text" name="nombre" class="form-control" id="idNombre"  required>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idApellido" >Apellido</label>
-                        <input type="text"  name="apellido" class="form-control" id="idApellido" value="{{ id.apellido }}"  required>
+                        <input type="text"  name="apellido" class="form-control" id="idApellido"   required>
                     </div>
                 </div>
             </div>
@@ -36,14 +37,14 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idUsername">Username</label>
-                        <input type="text" name="username3" class="form-control" id="idUsername" value="{{ id.username }}" readonly="readonly" required>
+                        <input type="text" name="username2" class="form-control" id="idUsername"  required>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="idPassword">Password</label>
-                        <input type="password3"  name="passwd3" class="form-control" id="idPassword"  value="{{ id.clave }}" required>
+                        <input type="password3"  name="passwd2" class="form-control" id="idPassword"  required>
                     </div>
                 </div>
             </div>
@@ -138,30 +139,8 @@
 
     <hr/>
 
-    <script>
-   $(document).ready( function () {
-
-       var listaTotal = ["lab1","lab2","lab3","lab4","lab5","lab6","telecomunicaciones","mac","direccion","electronica","ciditec","administradorTecnico"];
-       var listaQueLlega=[];
-
-       {% for i in puertas %}
-           listaQueLlega.push("{{ i.nombre }}");
-       {% endfor %}
-
-        for(var i =0; i<listaQueLlega.length;i++){
-            var index = listaTotal.indexOf(listaQueLlega[i]);
-            console.log("vuela "+ i);
-            if(index!=-1){
-               console.log(listaQueLlega[i]);
-                document.getElementById(String(listaQueLlega[i])).checked = true;
-            }
-
-        }
-
-
-
-    } );
-    </script>
 
 
 {% endblock %}
+
+
