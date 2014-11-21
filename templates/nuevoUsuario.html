@@ -11,7 +11,7 @@
     </div>
     <hr style="margin: 10px">
 
-    <form method="POST" action="/ingresarUsuario/" class="well"  role="form" >
+    <form id="frmPrincipal" method="POST" action="/ingresarUsuario/" class="well"  role="form" >
 
     <div class="row">
 
@@ -38,7 +38,7 @@
                     <div class="form-group">
                         <label for="idUsername">Username <label style="color:red">(No se podrá cambiar)</label></label>
                         <input type="text" name="username2" class="form-control" id="idUsername"  required>
-                        <p style="color:red">{{ existe }}</p>
+                        <label id="mensaje" style="color:red;"></label>
                     </div>
                 </div>
 
@@ -125,7 +125,7 @@
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-3 col-xs-6" >
-            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            <button type="button" onclick="verificarUsuario()" class="btn btn-primary">Guardar Cambios</button>
         </div>
         <div class="col-md-3 col-xs-6">
 
@@ -142,6 +142,30 @@
 
 
     <script>
+
+    function verificarUsuario(){
+    console.log("entra a inicio");
+        var username= document.getElementById("idUsername").value;
+
+
+        $.ajax({
+           data : {'username':username},
+            url : '/comprobarUsername/',
+            type: 'get',
+            success:function(data){
+                console.log(data);
+                if(data=="NO EXISTE"){
+                    console.log("1");
+                    //var frmPrincipal = document.getElementById( 'frmPrincipal' );
+                    //frmPrincipal.submit();
+                }else{
+                    console.log("2");
+                    $('#mensaje').html('USUARIO YA EXISTE');
+                }
+
+           }//fin del data
+        });//fin del ajax
+    }
 
     </script>
 {% endblock %}

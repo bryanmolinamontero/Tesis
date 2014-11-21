@@ -35,8 +35,20 @@
       <file leaf-file-name="administrador.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/administrador.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="44" selection-start="6833" selection-end="6833" vertical-scroll-proportion="6.148148" vertical-offset="3136" max-vertical-offset="5220">
+            <state line="269" column="1" selection-start="10216" selection-end="10216" vertical-scroll-proportion="-41.185184" vertical-offset="3730" max-vertical-offset="5220">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nuevoUsuario.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/nuevoUsuario.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="160" column="22" selection-start="5438" selection-end="5438" vertical-scroll-proportion="1.7948052" vertical-offset="2189" max-vertical-offset="3222">
+              <folding>
+                <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,16 +56,16 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cerraduras/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="6354">
+            <state line="364" column="0" selection-start="10507" selection-end="10507" vertical-scroll-proportion="0.0" vertical-offset="3613" max-vertical-offset="6588">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cerraduras/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.36" vertical-offset="108" max-vertical-offset="792">
+            <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="792">
               <folding />
             </state>
           </provider>
@@ -80,7 +92,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tesis/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="18" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="792">
+            <state line="36" column="38" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -108,10 +120,10 @@
         <option value="$PROJECT_DIR$/templates/usuarioEspecifico.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/usuarios.html" />
-        <option value="$PROJECT_DIR$/templates/nuevoUsuario.html" />
-        <option value="$PROJECT_DIR$/tesis/urls.py" />
         <option value="$PROJECT_DIR$/templates/administrador.html" />
+        <option value="$PROJECT_DIR$/tesis/urls.py" />
         <option value="$PROJECT_DIR$/cerraduras/views.py" />
+        <option value="$PROJECT_DIR$/templates/nuevoUsuario.html" />
       </list>
     </option>
   </component>
@@ -477,8 +489,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -488,8 +500,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18467154" sideWeight="0.76404494" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23595506" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23595506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23595506" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23595506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -560,23 +572,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nuevoUsuario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="4805" selection-end="4805" vertical-scroll-proportion="-31.777779" vertical-offset="1680" max-vertical-offset="2790">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/usuarioEspecifico.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="4" selection-start="303" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="3096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tesis/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="792">
           <folding />
         </state>
       </provider>
@@ -597,22 +595,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/administrador.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="44" selection-start="6833" selection-end="6833" vertical-scroll-proportion="6.148148" vertical-offset="3136" max-vertical-offset="5220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cerraduras/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="6354">
+        <state line="269" column="1" selection-start="10216" selection-end="10216" vertical-scroll-proportion="-41.185184" vertical-offset="3730" max-vertical-offset="5220">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cerraduras/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.36" vertical-offset="108" max-vertical-offset="792">
+        <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tesis/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="38" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cerraduras/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="364" column="0" selection-start="10507" selection-end="10507" vertical-scroll-proportion="0.0" vertical-offset="6151" max-vertical-offset="6588">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nuevoUsuario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="22" selection-start="5438" selection-end="5438" vertical-scroll-proportion="1.7948052" vertical-offset="2189" max-vertical-offset="3222">
+          <folding>
+            <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,6 @@
 # Create your views here.
 from audioop import reverse
+from django.contrib.sessions import serializers
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
 from django.shortcuts import render
@@ -350,3 +351,16 @@ def eliminarUsuario(request):
         return HttpResponseRedirect('/administrador/')
     else:
         return render_to_response('/')
+
+def comprobarUsername(request):
+    username=request.GET['username']
+    existe = personal.objects.filter(username=username)
+    cont = 0
+    data = "NO EXISTE"
+    for i in existe:
+        cont = cont + 1
+
+    if cont>0:
+        data = "SI EXISTE"
+
+    return HttpResponse(data)
