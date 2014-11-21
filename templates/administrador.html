@@ -5,14 +5,11 @@
         <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="/static/DataTables/media/css/jquery.dataTables.css">
 
-
-
         <!-- jQuery -->
         <script type="text/javascript" charset="utf8" src="/static/DataTables/media/js/jquery.js"></script>
 
         <!-- DataTables -->
         <script type="text/javascript" charset="utf8" src="/static/DataTables/media/js/jquery.dataTables.js"></script>
-
 
 
 
@@ -87,13 +84,6 @@
                   </div>
 
 
-
-
-
-
-
-
-
                   <div role="tabpanel" class="tab-pane fade" id="usuarios">
 
                       <br/>
@@ -120,29 +110,25 @@
                                     {% for i in usuarios %}
 
                                         <tr>
-                                        <td id="{{ i.id_personal }}">{{i.id_personal}}</td>
-                                        <td id="{{i.id_personal}}">{{i.nombre}}</td>
-                                        <td id="{{i.id_personal}}">{{i.apellido}}</td>
-                                        <td id="{{i.id_personal}}">{{i.username}}</td>
-                                        <td id="{{i.id_personal}}">{{i.clave}}</td>
+                                        <td id="id_{{ i.id_personal }}">{{i.id_personal}}</td>
+                                        <td id="nombre_{{i.id_personal}}">{{i.nombre}}</td>
+                                        <td id="apellido_{{i.id_personal}}">{{i.apellido}}</td>
+                                        <td id="username_{{i.id_personal}}">{{i.username}}</td>
+                                        <td id="clave_{{i.id_personal}}">{{i.clave}}</td>
 
                                     {% comment %} <td><button class="btn btn-success" id="Guardar" onclick="editarRegistro({{ i.codigo_terrateniente }})">Editar</button></td>{% endcomment %}
                                         <td>
-                                        <button  id ="Editar" onclick="editarRegistro({{ i.id_personal }})" class="btn btn-success" data-toggle="modal" data-target="#myModalEditar">
+                                        <button  id ="Editar" onclick="editarRegistro({{ i.id_personal }})" class="btn btn-success">
                                         Editar
                                         </button>
+                                        <button  id ="Eliminar" onclick="eliminarRegistro({{i.id_personal}})" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
 
-                                        <button  id ="Eliminar" onclick="eliminarRegistro()" class="btn btn-danger" data-toggle="modal" data-target="#myModalEliminar">
                                         Eliminar
                                         </button>
 
                                         </td>
 
-
-
                                         </tr>
-
-
 
                                 {% endfor %}
                                 </tbody>
@@ -156,44 +142,76 @@
                   {% endfor %}
 
 
-
-
                   </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
                   <div role="tabpanel" class="tab-pane fade" id="informacion">3</div>
 
                 </div>
           </div>
 
-
 </div>
 
+<!-- modal de elimiar-->
 
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Eliminar registro</h4>
+      </div>
+      <div class="modal-body">
+
+<form method="POST" action="/eliminarUsuario/" class="well"  role="form" >
+
+  <div class="row">
+      <div class="col-md-6">
+          <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" name="id" class="form-control" id="id" readonly="readonly">
+          </div>
+      </div>
+      <div class="col-md-6"></div>
+
+  </div>
+
+  <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+            <label for="nombres">Nombres</label>
+            <input type="text" name="nombre" class="form-control" id="nombres"  required>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+            <label for="apellidos" >Apellidos</label>
+            <input type="text"  name="apellido" class="form-control" id="apellidos"  required>
+        </div>
+       </div>
+
+  </div>
+
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar sin eliminar</button>
+        <button type="submit" class="btn btn-danger">Eliminar Registro</button>
+          </div>
+          </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- fin del modal-->
 
 
 
 <script>
-$(document).ready( function () {
-   /* $('#table_id').DataTable(
-            {
-            "language": {
-                "url": "dataTables.spanish.lang"
-            }
-        }
-    );*/
+
     $(document).ready(function() {
         $('#table_id').dataTable( {
             "language": {
@@ -222,37 +240,45 @@ $(document).ready( function () {
             }
         } );
     } );
-} );
+
 
 function editarRegistro(idUsuario){
-
-
     // Creamos el formulario auxiliar
-var form = document.createElement( "form" );
+    var form = document.createElement( "form" );
 
-// Le añadimos atributos como el name, action y el method
-form.setAttribute( "name", "formulario" );
-form.setAttribute( "action", "/usuarioEspecifico/" );
-form.setAttribute( "method", "post" );
+    // Le añadimos atributos como el name, action y el method
+    form.setAttribute( "name", "formulario" );
+    form.setAttribute( "action", "/usuarioEspecifico/" );
+    form.setAttribute( "method", "post" );
 
-// Creamos un input para enviar el valor
-var input = document.createElement( "input" );
+    // Creamos un input para enviar el valor
+    var input = document.createElement( "input" );
 
-// Le añadimos atributos como el name, type y el value
-input.setAttribute( "name", "idUsuario" );
-input.setAttribute( "type", "hidden" );
-input.setAttribute( "value", idUsuario );
+    // Le añadimos atributos como el name, type y el value
+    input.setAttribute( "name", "idUsuario" );
+    input.setAttribute( "type", "hidden" );
+    input.setAttribute( "value", idUsuario );
 
-// Añadimos el input al formulario
-form.appendChild( input );
+    // Añadimos el input al formulario
+    form.appendChild( input );
 
-// Añadimos el formulario al documento
-document.getElementsByTagName( "body" )[0].appendChild( form );
+    // Añadimos el formulario al documento
+    document.getElementsByTagName( "body" )[0].appendChild( form );
 
-// Hacemos submit
-document.formulario.submit();
-
+    // Hacemos submit
+    document.formulario.submit();
 }
+
+
+function eliminarRegistro(id){
+        var valor = document.getElementById("nombre_"+id).innerText;
+        console.log(valor);
+        document.getElementById("id").setAttribute("value",id);
+        document.getElementById("nombres").setAttribute("value",valor);
+        valor = document.getElementById("apellido_"+id).innerText;-
+        document.getElementById("apellidos").setAttribute("value",valor);
+
+    }
 </script>
 
 
