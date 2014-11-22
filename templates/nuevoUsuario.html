@@ -36,9 +36,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="idUsername">Username <label style="color:red">(No se podrá cambiar)</label></label>
+                        <label for="idUsername">Username <label style="color:#EF4836">(No se podrá cambiar)</label></label>
                         <input type="text" name="username2" class="form-control" id="idUsername"  required>
-                        <label id="mensaje" style="color:red;"></label>
+                        <label id="mensaje" style="color:#EF4836;"></label>
                     </div>
                 </div>
 
@@ -123,9 +123,18 @@
     </div>
     <br/>
     <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+        <label id="mensaje2" style="color:#EF4836;"></label>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-3 col-xs-6" >
-            <button type="button" onclick="verificarUsuario()" class="btn btn-primary">Guardar Cambios</button>
+
+
+            <button type="button" onclick="verificar()" class="btn btn-primary">Guardar Cambios</button>
         </div>
         <div class="col-md-3 col-xs-6">
 
@@ -142,12 +151,24 @@
 
 
     <script>
+    function verificar(){
+        var nombre= document.getElementById("idNombre").value;
+        var apellido= document.getElementById("idApellido").value;
+        var username= document.getElementById("idUsername").value;
+        var passwd= document.getElementById("idPassword").value;
+
+        if(nombre =="" || apellido == "" || username == "" || passwd == "")
+            $('#mensaje2').html('Por favor completa todos los campos');
+        else{
+            $('#mensaje2').html('');
+            verificarUsuario();
+        }
+
+    }
 
     function verificarUsuario(){
     console.log("entra a inicio");
         var username= document.getElementById("idUsername").value;
-
-
         $.ajax({
            data : {'username':username},
             url : '/comprobarUsername/',
@@ -155,9 +176,10 @@
             success:function(data){
                 console.log(data);
                 if(data=="NO EXISTE"){
+                    $('#mensaje').html('');
                     console.log("1");
-                    //var frmPrincipal = document.getElementById( 'frmPrincipal' );
-                    //frmPrincipal.submit();
+                    var frmPrincipal = document.getElementById( 'frmPrincipal' );
+                    frmPrincipal.submit();
                 }else{
                     console.log("2");
                     $('#mensaje').html('USUARIO YA EXISTE');

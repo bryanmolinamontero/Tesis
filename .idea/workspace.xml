@@ -32,22 +32,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="administrador.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="administrador.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/administrador.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="269" column="1" selection-start="10216" selection-end="10216" vertical-scroll-proportion="-41.185184" vertical-offset="3730" max-vertical-offset="5220">
+            <state line="189" column="104" selection-start="7637" selection-end="7637" vertical-scroll-proportion="0.7164634" vertical-offset="3167" max-vertical-offset="5220">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nuevoUsuario.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="nuevoUsuario.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/nuevoUsuario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="22" selection-start="5438" selection-end="5438" vertical-scroll-proportion="1.7948052" vertical-offset="2189" max-vertical-offset="3222">
+            <state line="159" column="7" selection-start="5390" selection-end="5390" vertical-scroll-proportion="-3.851852" vertical-offset="2758" max-vertical-offset="3618">
               <folding>
+                <element signature="n#style#0;n#hr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#div#1;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +61,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cerraduras/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="364" column="0" selection-start="10507" selection-end="10507" vertical-scroll-proportion="0.0" vertical-offset="3613" max-vertical-offset="6588">
+            <state line="364" column="0" selection-start="10507" selection-end="10507" vertical-scroll-proportion="0.0" vertical-offset="6552" max-vertical-offset="6678">
               <folding />
             </state>
           </provider>
@@ -65,7 +70,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cerraduras/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="792">
+            <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -74,7 +79,7 @@
       <file leaf-file-name="usuarios.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/usuarios.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="-11.111111" vertical-offset="186" max-vertical-offset="756">
+            <state line="27" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="756">
               <folding />
             </state>
           </provider>
@@ -83,7 +88,7 @@
       <file leaf-file-name="direccion.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/direccion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="360">
+            <state line="12" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -92,7 +97,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tesis/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="38" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="810">
+            <state line="36" column="38" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="846">
               <folding />
             </state>
           </provider>
@@ -120,10 +125,10 @@
         <option value="$PROJECT_DIR$/templates/usuarioEspecifico.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/usuarios.html" />
-        <option value="$PROJECT_DIR$/templates/administrador.html" />
         <option value="$PROJECT_DIR$/tesis/urls.py" />
         <option value="$PROJECT_DIR$/cerraduras/views.py" />
         <option value="$PROJECT_DIR$/templates/nuevoUsuario.html" />
+        <option value="$PROJECT_DIR$/templates/administrador.html" />
       </list>
     </option>
   </component>
@@ -159,7 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,6 +240,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,27 +348,7 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="tesis" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -389,7 +374,27 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tesis" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -490,17 +495,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32744783" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18467154" sideWeight="0.76404494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18467154" sideWeight="0.67255217" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23595506" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32744783" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23595506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -581,21 +586,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/direccion.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="12" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/usuarios.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="-11.111111" vertical-offset="186" max-vertical-offset="756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/administrador.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="1" selection-start="10216" selection-end="10216" vertical-scroll-proportion="-41.185184" vertical-offset="3730" max-vertical-offset="5220">
+        <state line="27" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="756">
           <folding />
         </state>
       </provider>
@@ -623,11 +621,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/nuevoUsuario.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="22" selection-start="5438" selection-end="5438" vertical-scroll-proportion="1.7948052" vertical-offset="2189" max-vertical-offset="3222">
+        <state line="159" column="7" selection-start="5390" selection-end="5390" vertical-scroll-proportion="-3.851852" vertical-offset="2758" max-vertical-offset="3618">
           <folding>
+            <element signature="n#style#0;n#hr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#div#1;n#form#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/administrador.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="104" selection-start="7637" selection-end="7637" vertical-scroll-proportion="0.7164634" vertical-offset="3167" max-vertical-offset="5220">
+          <folding />
         </state>
       </provider>
     </entry>
