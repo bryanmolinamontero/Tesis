@@ -502,7 +502,11 @@
       <created>1417753743921</created>
       <updated>1417753743921</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cambiar contraseña de administrador #ajax">
+      <created>1417753781132</created>
+      <updated>1417753781132</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
