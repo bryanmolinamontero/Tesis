@@ -11,6 +11,13 @@
         <!-- DataTables -->
         <script type="text/javascript" charset="utf8" src="/static/DataTables/media/js/jquery.dataTables.js"></script>
 
+    <style>
+        .sinBorde{
+            background: none;
+            border: none;
+        }
+    </style>
+
 
 
 {% endblock %}
@@ -36,24 +43,40 @@
                   <div role="tabpanel" class="tab-pane fade in active" id="puertas">
                       <br/>
                       <div class="row">
+                          <form action="/lab1/" method="post">
 
-                          <a href="/direccion/">
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab1.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center">
+                              <button class="sinBorde">
+                              <img class="img-responsive" src="/static/img/lab1.png" alt="lab1"/>
+                                </button>
+
+                          </div>
+
+                          </form>
+
+                          <a href="/lab2/">
+                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab2.png" alt="lab1"/></div>
                           </a>
 
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab2.png" alt="lab1"/></div>
-
+                          <a href="/lab3/">
                           <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab3.png" alt="lab1"/></div>
+                          </a>
 
                       </div>
 
                       <br/>
                       <div class="row">
+                          <a href="/lab4/">
                           <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab4.png" alt="lab1"/></div>
+                          </a>
 
+                          <a href="/lab5/">
                           <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab5.png" alt="lab1"/></div>
+                          </a>
 
+                          <a href="/lab6/">
                           <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/lab6.png" alt="lab1"/></div>
+                          </a>
 
                       </div>
 

@@ -38,3 +38,14 @@ class cerradurasAdmin(admin.ModelAdmin):
     list_display = ( 'id_cerradura', 'nombre' , 'id_personal')
     search_fields = ('nombre',)
 admin.site.register(cerraduras,cerradurasAdmin)
+
+class registros(models.Model):
+    id_registro = models.AutoField(primary_key=True)
+    puerta = models.CharField(max_length=100, blank=False, null=False)
+    nombre_persona = models.CharField(max_length=100, blank=False, null=False)
+    apellido_persona = models.CharField(max_length=100, blank=False, null=False)
+
+class registrosAdmin(admin.ModelAdmin):
+    list_display = ( 'id_registro', 'nombre_persona' , 'apellido_persona')
+    search_fields = ('nombre_persona',)
+admin.site.register(registros,registrosAdmin)

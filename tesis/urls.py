@@ -23,7 +23,12 @@ urlpatterns = patterns('',
     url(r'^cerrarSesion/$', cerrarSesion),
 
 
-    url(r'^direccion/$', direccion),
+    url(r'^lab1/$', lab1),
+    url(r'^lab2/$', lab2),
+    url(r'^lab3/$', lab3),
+    url(r'^lab4/$', lab4),
+    url(r'^lab5/$', lab5),
+    url(r'^lab6/$', lab6),
 
 
 

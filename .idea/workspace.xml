@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec5f72a-6f3a-4849-8141-2563e195316c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tesisBD2" afterPath="$PROJECT_DIR$/tesisBD2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/administrador.html" afterPath="$PROJECT_DIR$/templates/administrador.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cerraduras/models.py" afterPath="$PROJECT_DIR$/cerraduras/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tesis/urls.py" afterPath="$PROJECT_DIR$/tesis/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cerraduras/views.py" afterPath="$PROJECT_DIR$/cerraduras/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Universidad\TESIS bryan molina\Programacion\tesis\templates\direccion.html" afterPath="$PROJECT_DIR$/templates/lab1.html" />
     </list>
     <ignored path="tesis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,55 +31,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="administrador.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="administrador.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/administrador.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="211" selection-end="211" vertical-scroll-proportion="0.31421447" vertical-offset="0" max-vertical-offset="6480">
+            <state line="3" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.6666667" vertical-offset="36" max-vertical-offset="6894">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cerraduras/views.py">
+      <file leaf-file-name="lab6.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/lab6.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="380" column="0" selection-start="10965" selection-end="10965" vertical-scroll-proportion="0.0" vertical-offset="6840" max-vertical-offset="7002">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="8" selection-start="367" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cerraduras/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="810">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="direccion.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/direccion.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tesis/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="29" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="864">
+            <state line="6" column="57" selection-start="147" selection-end="147" vertical-scroll-proportion="0.3292683" vertical-offset="0" max-vertical-offset="342">
               <folding />
             </state>
           </provider>
@@ -97,21 +67,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/direccion.html" />
-        <option value="$PROJECT_DIR$/templates/usuariosAdministrador.html" />
-        <option value="$PROJECT_DIR$/tesis/settings.py" />
-        <option value="$PROJECT_DIR$/cerraduras/models.py" />
-        <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/templates/administradorBAK.html" />
-        <option value="$PROJECT_DIR$/templates/ingresarUsuario.html" />
-        <option value="$PROJECT_DIR$/templates/usuarioEspecifico.html" />
         <option value="$PROJECT_DIR$/templates/usuarios.html" />
         <option value="$PROJECT_DIR$/templates/nuevoUsuario.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/cerraduras/models.py" />
+        <option value="$PROJECT_DIR$/templates/direccion.html" />
+        <option value="$PROJECT_DIR$/templates/lab1.html" />
         <option value="$PROJECT_DIR$/tesis/urls.py" />
         <option value="$PROJECT_DIR$/cerraduras/views.py" />
+        <option value="$PROJECT_DIR$/templates/lab3.html" />
+        <option value="$PROJECT_DIR$/templates/lab2.html" />
+        <option value="$PROJECT_DIR$/templates/lab6.html" />
+        <option value="$PROJECT_DIR$/templates/lab5.html" />
+        <option value="$PROJECT_DIR$/templates/lab4.html" />
         <option value="$PROJECT_DIR$/templates/administrador.html" />
       </list>
     </option>
@@ -119,7 +89,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -218,24 +188,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="cerraduras" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -248,12 +200,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -262,6 +214,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Universidad\TESIS bryan molina\Programacion\tesis\templates" />
       <recent name="D:\Universidad\TESIS bryan molina\Programacion\tesis\static\img" />
       <recent name="C:\Users\Bryan Molina\PycharmProjects\tesis\static\img" />
       <recent name="C:\Users\Bryan Molina\PycharmProjects\tesis\static" />
@@ -355,7 +308,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tesis" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -381,27 +354,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="tesis" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -506,29 +459,33 @@
       <created>1417753781132</created>
       <updated>1417753781132</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cambiar contraseña de administrador #ajax">
+      <created>1417753883180</created>
+      <updated>1417753883180</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15088283" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37540984" sideWeight="0.5629575" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18428782" sideWeight="0.7655738" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18374817" sideWeight="0.62459016" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23442623" sideWeight="0.35976505" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23442623" sideWeight="0.64023495" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37540984" sideWeight="0.43704244" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30163935" sideWeight="0.64023495" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -548,35 +505,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="162" selection-end="162" vertical-scroll-proportion="0.4864865" vertical-offset="0" max-vertical-offset="5904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/DataTables/media/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="64262" selection-end="64262" vertical-scroll-proportion="0.14136125" vertical-offset="0" max-vertical-offset="382" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tesis/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="2934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/administradorBAK.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="10" selection-start="5221" selection-end="5221" vertical-scroll-proportion="-10.666667" vertical-offset="2016" max-vertical-offset="6282">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="4" selection-start="884" selection-end="884" vertical-scroll-proportion="0.33157894" vertical-offset="216" max-vertical-offset="900">
@@ -591,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/usuarios.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.62842894" vertical-offset="270" max-vertical-offset="756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/nuevoUsuario.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="168" column="4" selection-start="5636" selection-end="6407" vertical-scroll-proportion="-1.7307693" vertical-offset="2934" max-vertical-offset="3618">
@@ -605,51 +526,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/usuarios.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="34" selection-start="708" selection-end="708" vertical-scroll-proportion="-8.666667" vertical-offset="270" max-vertical-offset="756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/usuarioEspecifico.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="0" selection-start="4122" selection-end="4122" vertical-scroll-proportion="0.04488778" vertical-offset="1890" max-vertical-offset="3096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tesis/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="29" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="828">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cerraduras/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="367" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/direccion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="360">
+        <state line="106" column="0" selection-start="4122" selection-end="4122" vertical-scroll-proportion="-0.6666667" vertical-offset="1890" max-vertical-offset="3096">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cerraduras/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="380" column="0" selection-start="10965" selection-end="10965" vertical-scroll-proportion="0.0" vertical-offset="6484" max-vertical-offset="6912">
+        <state line="404" column="0" selection-start="11314" selection-end="11314" vertical-scroll-proportion="0.8947368" vertical-offset="6966" max-vertical-offset="7380">
+          <folding>
+            <element signature="e#26#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="13" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.3292683" vertical-offset="756" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cerraduras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.34084508" vertical-offset="581" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tesis/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="26" selection-start="877" selection-end="877" vertical-scroll-proportion="0.4056338" vertical-offset="342" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lab5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="147" selection-end="147" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lab4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="147" selection-end="147" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lab3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="147" selection-end="147" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lab2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="147" selection-end="147" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lab1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="7" selection-start="171" selection-end="171" vertical-scroll-proportion="0.4390244" vertical-offset="0" max-vertical-offset="342">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/administrador.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="211" selection-end="211" vertical-scroll-proportion="0.31421447" vertical-offset="0" max-vertical-offset="6480">
+        <state line="3" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.6666667" vertical-offset="36" max-vertical-offset="6894">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lab6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="147" selection-end="147" vertical-scroll-proportion="0.3292683" vertical-offset="0" max-vertical-offset="342">
           <folding />
         </state>
       </provider>

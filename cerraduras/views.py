@@ -114,8 +114,7 @@ def cerrarSesion(request):
 
 
 
-def direccion(request):
-  return render_to_response('direccion.html')
+
 
 def nuevoUsuario(request):
     return render_to_response('nuevoUsuario.html')
@@ -382,3 +381,24 @@ def comprobarPasswords(request):
         data = 1
 
     return HttpResponse(data)
+
+
+
+def lab1(request):
+  return render_to_response('lab1.html')
+
+def lab2(request):
+  return render_to_response('lab2.html')
+
+def lab3(request):
+  return render_to_response('lab3.html')
+
+def lab4(request):
+  return render_to_response('lab4.html')
+
+def lab5(request):
+  return render_to_response('lab5.html')
+
+def lab6(request):
+  return render_to_response('lab6.html')
+
