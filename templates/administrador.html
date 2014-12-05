@@ -26,7 +26,7 @@
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a href="#puertas" role="tab" data-toggle="tab">Puertas</a></li>
                   <li role="presentation"><a href="#usuarios" role="tab" data-toggle="tab">Usuarios</a></li>
-                  <li role="presentation"><a href="#informacion" role="tab" data-toggle="tab">Mi Información</a></li>
+                  <li role="presentation"><a href="#informacion" role="tab" data-toggle="tab">Modificar Contraseña</a></li>
                     <li class="pull-right" ><a href="/cerrarSesion/" >CERRAR SESION</a></li>
 
                 </ul>
@@ -64,7 +64,6 @@
                           <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/mac.png" alt="lab1"/></div>
 
                           <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/electronica.png" alt="lab1"/></div>
-
 
 
                       </div>
@@ -144,7 +143,36 @@
 
                   </div>
 
-                  <div role="tabpanel" class="tab-pane fade" id="informacion">3</div>
+                  <div role="tabpanel" class="tab-pane fade" id="informacion">
+                      <br/>
+
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="passwdActual">Contraseña Actual <label style="color:#EF4836"></label></label>
+                                    <input type="password" name="passwdActual" class="form-control" id="passwdActual"  required>
+                                    <label id="mensaje" style="color:#EF4836;"></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="passwdNueva">Nueva Contraseña</label>
+                                    <input type="password"  name="passwdNueva" class="form-control" id="passwdNueva"  required>
+                                </div>
+                                <label id="mensaje2" style="color:#EF4836;"></label>
+                            </div>
+
+                            <div class="col-md-5"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-5">
+                                <button type="button" onclick="verificar()" class="btn btn-primary">Guardar Cambios</button>
+                                <button type="button" onclick="window.location.href='/administrador/'" class="btn btn-danger" data-dismiss="modal">Cerrar sin guardar</button>
+                            </div>
+                            <div class="col-md-5"></div>
+                        </div>
+                  </div>
 
                 </div>
           </div>
@@ -242,6 +270,8 @@
     } );
 
 
+
+
 function editarRegistro(idUsuario){
     // Creamos el formulario auxiliar
     var form = document.createElement( "form" );
@@ -279,7 +309,47 @@ function eliminarRegistro(id){
         document.getElementById("apellidos").setAttribute("value",valor);
 
     }
+
+
+function verificar(){
+        var pass1= document.getElementById("passwdActual").value;
+        var pass2= document.getElementById("passwdNueva").value;
+
+
+        if(pass1 == "" || pass2== "")
+            $('#mensaje2').html('Por favor completa todos los campos');
+        else{
+            $('#mensaje2').html('');
+            verificarPasswords(pass1,pass2);
+        }
+    }
+
+function verificarPasswords(pass1, pass2){
+
+        $.ajax({
+           data : {'pass1':pass1 , 'pass2':pass2},
+            url : '/comprobarPasswords/',
+            type: 'get',
+            success:function(data){
+
+                if(data==0){
+                    $('#mensaje2').html('CONTRASEÑA ACTUAL INCORRECTA');
+                    //console.log("1");
+                    //var frmPrincipal = document.getElementById( 'frmPrincipal' );
+                    //frmPrincipal.submit();
+                }else{
+
+                    $('#mensaje2').html('CONTRASEÑAS ACTUALIZADAS');
+                    document.getElementById("passwdActual").value='';
+                    document.getElementById("passwdNueva").value='';
+                }
+
+           }//fin del data
+        });//fin del ajax
+    }
 </script>
+
+
 
 
 {% endblock %}

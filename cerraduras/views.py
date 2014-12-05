@@ -362,5 +362,23 @@ def comprobarUsername(request):
 
     if cont>0:
         data = "SI EXISTE"
+    return HttpResponse(data)
+
+
+
+def comprobarPasswords(request):
+    pass1=request.GET['pass1']
+    pass2=request.GET['pass2']
+    existePass = personal.objects.filter(clave=pass1, tipo='Administrador')
+    cont = 0
+    data = 0
+    for i in existePass:
+        cont = cont + 1
+
+    if cont>0:
+        #MyModel.objects.filter(pk=some_value).update(field1='some value')
+        actualizarPassword = personal.objects.filter(id_personal=1).update(clave=pass2)
+
+        data = 1
 
     return HttpResponse(data)

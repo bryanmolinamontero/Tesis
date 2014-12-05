@@ -1,13 +1,56 @@
 {% extends 'base.html' %}
 
-{% block contenido %}
-    <br/><br/>
-<div class="row">
- este es el index
+{% block recursos %}
+    <style>
+        .titulo{
+            text-align: center;
+            color: #3071A9;
+        }
+        .resumen{
+            font-size: 18px;
+            text-align: justify;
+            color: #000000;
+        }
+        .entrar{
+                        width: 200px;
+            font-size: 24px;
+        }
+        body{
+            background-image: url("/static/img/fondo2.jpg");
+        }
+        .contenedor{
+            background-color: #ffffff;
+            border-radius: 10px;
+            background-color: rgba(255, 252, 252, 0.6);
+        }
+    </style>
+{% endblock %}
 
+{% block contenido %}
+    <br/>
+<div class="row">
+
+    <div class="col-md-3"></div>
+    <div class="col-md-6 contenedor" align="center">
+        <hr/>
+            <h1 class="titulo">¿Qué es Inmótica?</h1>
+        <hr/>
+        <p class="resumen" style="background-color: transparent">
+            La inmótica es un modo de gestión remoto, centralizado y automatizado que
+            supone la incorporación de numerosos subsistemas en las instalaciones de
+            edificios con el fin de optimizar recursos, reducir costes y
+            disminuir el consumo de energía innecesario, al mismo tiempo que
+            aumenta la seguridad y el confort.
+        </p>
+        <br/>
     <form method="post" action="/login/">
-        <input type="submit" value="ENTRAR"/>
+        <input class="btn btn-primary entrar" type="submit" value="ENTRAR"/>
     </form>
+        <hr/>
+    </div>
+    <div class="col-md-3"></div>
+
+
 
 
 </div>

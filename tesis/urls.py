@@ -38,4 +38,5 @@ urlpatterns = patterns('',
     url(r'^editarUsuario/$', editarUsuario),
     url(r'^eliminarUsuario/$', eliminarUsuario),
     url(r'^comprobarUsername/$', comprobarUsername),
+    url(r'^comprobarPasswords/$', comprobarPasswords),
 )
