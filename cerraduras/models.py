@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 
 class personal(models.Model):
-    id_personal = models.AutoField(primary_key=True)
+    id_personal  = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=100, blank=False, null=False)
     apellido = models.CharField(max_length=100, blank=False, null=False)
     username = models.CharField(max_length=100, blank=False, null=False)
@@ -44,8 +44,10 @@ class registros(models.Model):
     puerta = models.CharField(max_length=100, blank=False, null=False)
     nombre_persona = models.CharField(max_length=100, blank=False, null=False)
     apellido_persona = models.CharField(max_length=100, blank=False, null=False)
+    fecha  = models.DateTimeField(blank=False, null=False)
+
 
 class registrosAdmin(admin.ModelAdmin):
-    list_display = ( 'id_registro', 'nombre_persona' , 'apellido_persona')
+    list_display = ( 'id_registro', 'puerta' , 'apellido_persona')
     search_fields = ('nombre_persona',)
 admin.site.register(registros,registrosAdmin)

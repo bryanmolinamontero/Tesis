@@ -385,20 +385,37 @@ def comprobarPasswords(request):
 
 
 def lab1(request):
-  return render_to_response('lab1.html')
+    if request.method=='POST':
+        return render_to_response('lab1.html')
+    else:
+        return HttpResponseRedirect('/')
 
 def lab2(request):
-  return render_to_response('lab2.html')
+    if request.method=='POST':
+        return render_to_response('lab2.html')
+    else:
+        return HttpResponseRedirect('/')
 
 def lab3(request):
-  return render_to_response('lab3.html')
+    if request.method=='POST':
+        return render_to_response('lab3.html')
+    else:
+        return HttpResponseRedirect('/')
 
 def lab4(request):
-  return render_to_response('lab4.html')
+    if request.method=='POST':
+        return render_to_response('lab4.html')
+    else:
+        return HttpResponseRedirect('/')
 
 def lab5(request):
-  return render_to_response('lab5.html')
+    if request.method=='POST':
+        return render_to_response('lab5.html')
+    else:
+        return HttpResponseRedirect('/')
 
 def lab6(request):
-  return render_to_response('lab6.html')
-
+    if request.method=='POST':
+        return render_to_response('lab6.html')
+    else:
+        return HttpResponseRedirect('/')
