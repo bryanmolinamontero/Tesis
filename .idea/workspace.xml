@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec5f72a-6f3a-4849-8141-2563e195316c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/lab2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/lab3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/lab4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/lab5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/lab6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tesisBD2" afterPath="$PROJECT_DIR$/tesisBD2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/administrador.html" afterPath="$PROJECT_DIR$/templates/administrador.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cerraduras/models.py" afterPath="$PROJECT_DIR$/cerraduras/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cerraduras/views.py" afterPath="$PROJECT_DIR$/cerraduras/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tesis.iws" />
@@ -504,19 +495,24 @@
       <created>1417806288438</created>
       <updated>1417806288438</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modificación en bd para registro de bitácora">
+      <created>1418682742191</created>
+      <updated>1418682742191</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21276596" sideWeight="0.5629575" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18374817" sideWeight="0.99018" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18374817" sideWeight="0.99018" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.009819968" sideWeight="0.3601757" order="8" side_tool="true" content_ui="tabs" />
@@ -526,7 +522,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -541,7 +536,8 @@
     </option>
     <MESSAGE value="Cambiar contraseña de administrador #ajax" />
     <MESSAGE value="Configuración de seguridad de los botones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuración de seguridad de los botones" />
+    <MESSAGE value="Modificación en bd para registro de bitácora" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificación en bd para registro de bitácora" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
