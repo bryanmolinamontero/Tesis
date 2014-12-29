@@ -50,4 +50,9 @@ urlpatterns = patterns('',
     url(r'^eliminarUsuario/$', eliminarUsuario),
     url(r'^comprobarUsername/$', comprobarUsername),
     url(r'^comprobarPasswords/$', comprobarPasswords),
+
+
+    #registros
+    url(r'^registrosBitacora/$', registrosBitacora),
+
 )

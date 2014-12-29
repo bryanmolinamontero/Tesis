@@ -32,7 +32,7 @@
               <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a href="#puertas" role="tab" data-toggle="tab">Puertas</a></li>
-                  <li role="presentation"><a href="#registros" role="tab" data-toggle="tab">Registros</a></li>
+                  <li role="presentation"><a href="/registrosBitacora/">Registros</a></li>
                   <li role="presentation"><a href="#usuarios" role="tab" data-toggle="tab">Usuarios</a></li>
                   <li role="presentation"><a href="#informacion" role="tab" data-toggle="tab">Modificar Contraseña</a></li>
                     <li class="pull-right" ><a href="/cerrarSesion/" >CERRAR SESION</a></li>
@@ -165,17 +165,7 @@
 
 
 
-                <div role="tabpanel" class="tab-pane fade" id="registros">
-                      <br/>
 
-                        <div class="row">
-
-                        {% for i in registros %}
-                           {{ i.id }}&nbsp;{{ i.nombre_persona }}&nbsp;{{ i.apellido_persona }}&nbsp;{{ i.puerta }}&nbsp;  {{ i.fecha }}&nbsp;
-                        {% endfor %}
-                        </div>
-
-                  </div>
 
 
                   <div role="tabpanel" class="tab-pane fade" id="usuarios">

@@ -1,0 +1,239 @@
+
+/* ejemplo
+
+byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+
+// the dns server ip
+IPAddress dnServer(192, 168, 0, 1);
+// the router's gateway address:
+IPAddress gateway(192, 168, 0, 1);
+// the subnet:
+IPAddress subnet(255, 255, 255, 0);
+
+//the IP address is dependent on your network
+IPAddress ip(192, 168, 0, 2);
+
+void setup() {
+  Serial.begin(9600);
+
+  // initialize the ethernet device
+  Ethernet.begin(mac, ip, dnServer, gateway, subnet);
+  //print out the IP address
+  Serial.print("IP = ");
+  Serial.println(Ethernet.localIP());
+}
+*/
+
+#include <SPI.h>
+#include <Ethernet.h>
+
+//Declaración de la direcciones MAC e IP. También del puerto 80
+//byte mac[]={0xDE,0xAD,0xBE,0xEF,0xFE,0xED}; //MAC
+//IPAddress ip(192,168,10,2); //IP
+
+byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+
+// the dns server ip
+IPAddress dnServer(192, 168, 1, 1);
+// the router's gateway address:
+IPAddress gateway(192, 168, 1, 1);
+// the subnet:
+IPAddress subnet(255, 255, 255, 0);
+
+//the IP address is dependent on your network
+IPAddress ip(192, 168, 1, 30);
+
+
+EthernetServer servidor(80);
+
+int lab1=22, lab2=26, lab3=30, lab4=34, lab5=38, lab6=42;
+
+int labTelecomunicaciones=29, labMac=33, labElectronica=37, direccion=41, ciditec=45, admTecnico=49;
+
+String readString=String(30);
+String state=String(3);
+
+void setup()
+{
+  Ethernet.begin(mac, ip); //Inicializamos con las direcciones asignadas
+  servidor.begin();
+  pinMode(lab1,OUTPUT);
+  digitalWrite(lab1,LOW);
+
+  pinMode(lab2,OUTPUT);
+  digitalWrite(lab2,LOW);
+
+  pinMode(lab3,OUTPUT);
+  digitalWrite(lab3,LOW);
+
+  pinMode(lab4,OUTPUT);
+  digitalWrite(lab4,LOW);
+
+  pinMode(lab5,OUTPUT);
+  digitalWrite(lab5,LOW);
+
+  pinMode(lab6,OUTPUT);
+  digitalWrite(lab6,LOW);
+
+// int labTelecomunicaciones=29, labMac=33, labElectronica=37, direccion=41, ciditec=45, admTecnico=49;
+
+  pinMode(labTelecomunicaciones,OUTPUT);
+  digitalWrite(labTelecomunicaciones,LOW);
+
+  pinMode(labMac,OUTPUT);
+  digitalWrite(labMac,LOW);
+
+  pinMode(labElectronica,OUTPUT);
+  digitalWrite(labElectronica,LOW);
+
+  pinMode(direccion,OUTPUT);
+  digitalWrite(direccion,LOW);
+
+  pinMode(ciditec,OUTPUT);
+  digitalWrite(ciditec,LOW);
+
+  pinMode(admTecnico,OUTPUT);
+  digitalWrite(admTecnico,LOW);
+
+
+  state="OFF";
+}
+
+void loop()
+{
+  EthernetClient cliente= servidor.available();
+
+  if(cliente)
+  {
+    boolean lineaenblanco=true;
+    while(cliente.connected())//Cliente conectado
+    {
+      if(cliente.available())
+      {
+        char c=cliente.read();
+        if(readString.length()<30)//Leemos petición HTTP caracter a caracter
+        {
+          readString.concat(c); //Almacenar los caracteres en la variable readString
+        }
+        if(c=='\n' && lineaenblanco)//Si la petición HTTP ha finalizado
+        {
+          int LED = readString.indexOf("LED=");
+          String peticion = readString.substring(LED,LED+5);
+          if(peticion=="LED=1")
+          {
+            digitalWrite(lab1,HIGH);
+            state="1";
+            delay(500);
+            digitalWrite(lab1,LOW);
+          } else if (readString.substring(LED,LED+5)=="LED=2")
+          {
+            digitalWrite(lab2,HIGH);
+            state="2";
+            delay(500);
+            digitalWrite(lab2,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=3")
+          {
+            digitalWrite(lab3,HIGH);
+            state="3";
+            delay(500);
+            digitalWrite(lab3,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=4")
+          {
+            digitalWrite(lab4,HIGH);
+            state="4";
+            delay(500);
+            digitalWrite(lab4,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=5")
+          {
+            digitalWrite(lab5,HIGH);
+            state="5";
+            delay(500);
+            digitalWrite(lab5,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=6")
+          {
+            digitalWrite(lab6,HIGH);
+            state="6";
+            delay(500);
+            digitalWrite(lab6,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=t")
+          {
+            digitalWrite(labTelecomunicaciones,HIGH);
+            state="t";
+            delay(500);
+            digitalWrite(labTelecomunicaciones,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=m")
+          {
+            digitalWrite(labMac,HIGH);
+            state="m";
+            delay(500);
+            digitalWrite(labMac,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=e")
+          {
+            digitalWrite(labElectronica,HIGH);
+            state="e";
+            delay(500);
+            digitalWrite(labElectronica,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=d")
+          {
+            digitalWrite(direccion,HIGH);
+            state="d";
+            delay(500);
+            digitalWrite(direccion,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=c")
+          {
+            digitalWrite(ciditec,HIGH);
+            state="c";
+            delay(500);
+            digitalWrite(ciditec,LOW);
+          }else if (readString.substring(LED,LED+5)=="LED=a")
+          {
+            digitalWrite(admTecnico,HIGH);
+            state="a";
+            delay(500);
+            digitalWrite(admTecnico,LOW);
+          }
+
+          // int labTelecomunicaciones=29, labMac=33, labElectronica=37, direccion=41, ciditec=45, admTecnico=49;
+
+
+          //Cabecera HTTP estándar
+          cliente.println("HTTP/1.1 200 OK");
+          cliente.println("Content-Type: text/html");
+          cliente.println();
+          //Página Web en HTML
+          cliente.println("<html>");
+          cliente.println("<head>");
+          cliente.println("<title>LAMPARA ON/OFF</title>");
+          cliente.println("<link rel=\"stylesheet\" href=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css\">");
+          cliente.println("</head>");
+          cliente.println("<body width=100% height=100%>");
+          cliente.println("<center>");
+          cliente.println("<h1> ABRIENDO PUERTA</h1>");
+          cliente.print("<br><br>");
+          //cliente.print("Estado de la lampara: ");
+          //cliente.print(state);
+          cliente.print("<br><br><br><br>");
+          //cliente.println("<input type=submit class =\"btn btn-primary\" value=DIRECCION style=width:200px;height:75px onClick=location.href='./?LED=D\'>");
+          //cliente.println("<input type=submit value=RONALD style=width:200px;height:75px onClick=location.href='./?LED=R\'>");
+          cliente.println("</center>");
+
+          cliente.println("<script>");
+
+                    cliente.println("var pagina=\"http://192.168.1.31:8000\"");
+                    cliente.println("function redireccionar()");
+                    cliente.println("{");
+                    cliente.println("location.href=pagina");
+                    cliente.println("}");
+                    cliente.println("setTimeout (\"redireccionar()\", 1);");
+
+          cliente.println("</script>");
+
+          cliente.println("</body>");
+          cliente.println("</html>");
+          cliente.stop();//Cierro conexión con el cliente
+          readString="";
+        }
+      }
+    }
+  }
+}

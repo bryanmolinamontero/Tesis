@@ -631,3 +631,8 @@ def administradorTecnico(request):
                 return render_to_response('administradorTecnico.html')
     else:
         return HttpResponseRedirect('/')
+
+
+def registrosBitacora(request):
+    bitacora = registros.objects.all().order_by("-fecha")
+    return render_to_response('registros.html', {"bitacora":bitacora})
