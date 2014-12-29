@@ -32,6 +32,7 @@
               <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a href="#puertas" role="tab" data-toggle="tab">Puertas</a></li>
+                  <li role="presentation"><a href="#registros" role="tab" data-toggle="tab">Registros</a></li>
                   <li role="presentation"><a href="#usuarios" role="tab" data-toggle="tab">Usuarios</a></li>
                   <li role="presentation"><a href="#informacion" role="tab" data-toggle="tab">Modificar Contraseña</a></li>
                     <li class="pull-right" ><a href="/cerrarSesion/" >CERRAR SESION</a></li>
@@ -102,26 +103,77 @@
 
                       <br/>
                       <div class="row">
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/telecomunicaciones.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center">
+                              <form action="/telecomunicaciones/" method="POST">
+                                    <button type="submit" class="sinBorde">
+                                        <img class="img-responsive" src="/static/img/telecomunicaciones.png" alt="telecomunicaciones"/>
+                                    </button>
+                              </form>
+                          </div>
 
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/mac.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center">
+                              <form action="/mac/" method="POST">
+                                    <button type="submit" class="sinBorde">
+                                        <img class="img-responsive" src="/static/img/mac.png" alt="mac"/>
+                                    </button>
+                              </form>
+                          </div>
 
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/electronica.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center">
+                              <form action="/electronica/" method="POST">
+                                    <button type="submit" class="sinBorde">
+                                        <img class="img-responsive" src="/static/img/electronica.png" alt="electronica"/>
+                                    </button>
+                              </form>
+                          </div>
+
+
 
 
                       </div>
 
                       <br/>
                       <div class="row">
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/direccion.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center">
+                              <form action="/direccion/" method="POST">
+                                    <button type="submit" class="sinBorde">
+                                        <img class="img-responsive" src="/static/img/direccion.png" alt="direccion"/>
+                                    </button>
+                              </form>
+                          </div>
 
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/ciditec.png" alt="lab1"/></div>
+                          <div class="col-md-4" align="center">
+                              <form action="/ciditec/" method="POST">
+                                    <button type="submit" class="sinBorde">
+                                        <img class="img-responsive" src="/static/img/ciditec.png" alt="ciditec"/>
+                                    </button>
+                              </form>
+                          </div>
 
-                          <div class="col-md-4" align="center"><img class="img-responsive" src="/static/img/administradorTecnico.png" alt="lab1"/></div>
-
-
+                          <div class="col-md-4" align="center">
+                              <form action="/administradorTecnico/" method="POST">
+                                    <button type="submit" class="sinBorde">
+                                        <img class="img-responsive" src="/static/img/administradorTecnico.png" alt="administradorTecnico"/>
+                                    </button>
+                              </form>
+                          </div>
 
                       </div>
+
+                  </div>
+
+
+
+
+                <div role="tabpanel" class="tab-pane fade" id="registros">
+                      <br/>
+
+                        <div class="row">
+
+                        {% for i in registros %}
+                           {{ i.id }}&nbsp;{{ i.nombre_persona }}&nbsp;{{ i.apellido_persona }}&nbsp;{{ i.puerta }}&nbsp;  {{ i.fecha }}&nbsp;
+                        {% endfor %}
+                        </div>
 
                   </div>
 

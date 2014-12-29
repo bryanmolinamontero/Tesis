@@ -1,5 +1,20 @@
 {% extends 'base.html' %}
 
+
+
+{% block recursos %}
+
+    <style>
+        .sinBorde{
+            background: none;
+            border: none;
+        }
+    </style>
+
+
+
+{% endblock %}
+
 {% block contenido %}
     <hr>
     <div class="row">
@@ -26,7 +41,13 @@
 
         <div class="col-md-4" align="center">
 
-            <a href="/{{ i.nombre }}/"><img class="img-responsive" src="/static/img/{{ i.nombre }}.png" alt="{{ i.nombre }}"/></a>
+        <form action="/{{ i.nombre }}/" method="POST">
+                                    <button type="submit" class="sinBorde">
+                                        <img class="img-responsive" src="/static/img/{{ i.nombre }}.png" alt="cerradura"/>
+                                    </button>
+        </form>
+
+<!--            <a href="/{{ i.nombre }}/"><img class="img-responsive" src="/static/img/{{ i.nombre }}.png" alt="{{ i.nombre }}"/></a>-->
 
         </div>
 

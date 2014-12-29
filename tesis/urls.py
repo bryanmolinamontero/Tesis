@@ -29,6 +29,12 @@ urlpatterns = patterns('',
     url(r'^lab4/$', lab4),
     url(r'^lab5/$', lab5),
     url(r'^lab6/$', lab6),
+    url(r'^telecomunicaciones/$', telecomunicaciones),
+    url(r'^mac/$', mac),
+    url(r'^electronica/$', electronica),
+    url(r'^direccion/$', direccion),
+    url(r'^ciditec/$', ciditec),
+    url(r'^administradorTecnico/$', administradorTecnico),
 
 
 

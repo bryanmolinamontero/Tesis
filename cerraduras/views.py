@@ -1,10 +1,14 @@
 # Create your views here.
 from audioop import reverse
+from datetime import datetime
 from django.contrib.sessions import serializers
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
 from django.shortcuts import render
+from win32com.server import exception
+
 from models import *
+import time
 
 
 def usuario(request):
@@ -39,7 +43,8 @@ def usuario(request):
 
 def administrador(request):
     usuarios = personal.objects.filter(tipo='Usuario')
-    return render_to_response('administrador.html', {"usuarios":usuarios})
+    registro = registros.objects.all()
+    return render_to_response('administrador.html', {"usuarios":usuarios, "registros":registro})
 
 
 
@@ -384,38 +389,245 @@ def comprobarPasswords(request):
 
 
 
+
+
 def lab1(request):
+
     if request.method=='POST':
-        return render_to_response('lab1.html')
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="LABORATORIO 1", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab1.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="LABORATORIO 1", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab1.html')
+            except:
+                return render_to_response('lab1.html')
     else:
         return HttpResponseRedirect('/')
 
 def lab2(request):
     if request.method=='POST':
-        return render_to_response('lab2.html')
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="LABORATORIO 2", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab2.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="LABORATORIO 2", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab2.html')
+            except:
+                return render_to_response('lab2.html')
     else:
         return HttpResponseRedirect('/')
 
 def lab3(request):
     if request.method=='POST':
-        return render_to_response('lab3.html')
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="LABORATORIO 3", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab3.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="LABORATORIO 3", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab3.html')
+            except:
+                return render_to_response('lab3.html')
     else:
         return HttpResponseRedirect('/')
 
 def lab4(request):
     if request.method=='POST':
-        return render_to_response('lab4.html')
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="LABORATORIO 4", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab4.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="LABORATORIO 4", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab4.html')
+            except:
+                return render_to_response('lab4.html')
     else:
         return HttpResponseRedirect('/')
 
 def lab5(request):
     if request.method=='POST':
-        return render_to_response('lab5.html')
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="LABORATORIO 5", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab5.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="LABORATORIO 5", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab5.html')
+            except:
+                return render_to_response('lab5.html')
     else:
         return HttpResponseRedirect('/')
 
 def lab6(request):
     if request.method=='POST':
-        return render_to_response('lab6.html')
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="LABORATORIO 6", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab6.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="LABORATORIO 6", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('lab6.html')
+            except:
+                return render_to_response('lab6.html')
+    else:
+        return HttpResponseRedirect('/')
+
+def telecomunicaciones(request):
+    if request.method=='POST':
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="TELECOMUNICACIONES", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('telecomunicaciones.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="TELECOMUNICACIONES", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('telecomunicaciones.html')
+            except:
+                return render_to_response('telecomunicaciones.html')
+    else:
+        return HttpResponseRedirect('/')
+
+def mac(request):
+    if request.method=='POST':
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="MAC", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('mac.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="MAC", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('mac.html')
+            except:
+                return render_to_response('mac.html')
+    else:
+        return HttpResponseRedirect('/')
+
+def electronica(request):
+    if request.method=='POST':
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="ELECTRONICA", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('electronica.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="ELECTRONICA", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('electronica.html')
+            except:
+                return render_to_response('electronica.html')
+    else:
+        return HttpResponseRedirect('/')
+
+def direccion(request):
+    if request.method=='POST':
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="DIRECCION", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('direccion.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="DIRECCION", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('direccion.html')
+            except:
+                return render_to_response('direccion.html')
+    else:
+        return HttpResponseRedirect('/')
+
+def ciditec(request):
+    if request.method=='POST':
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="CIDITEC", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('ciditec.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="CIDITEC", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('ciditec.html')
+            except:
+                return render_to_response('ciditec.html')
+    else:
+        return HttpResponseRedirect('/')
+
+def administradorTecnico(request):
+    if request.method=='POST':
+        try:
+              username = request.session['sesionUsuario']
+              datos = personal.objects.get(username=username)
+              guardarRegistro = registros(puerta="ADMINISTRADOR TECNICO", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('administradorTecnico.html')
+        except:
+            try:
+              username = request.session['sesionAdministrador']
+              datos = personal.objects.get(tipo="Administrador")
+              guardarRegistro = registros(puerta="ADMINISTRADOR TECNICO", nombre_persona=datos.nombre, apellido_persona=datos.apellido, fecha=datetime.now())
+              guardarRegistro.save()
+              return render_to_response('administradorTecnico.html')
+            except:
+                return render_to_response('administradorTecnico.html')
     else:
         return HttpResponseRedirect('/')
